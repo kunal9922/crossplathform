@@ -4,7 +4,6 @@ void main() {
   runApp(const MpApp());
 }
 
-
 class MpApp extends StatelessWidget {
   const MpApp({super.key});
 
@@ -12,16 +11,18 @@ class MpApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(
-          padding: const EdgeInsets.all(50),
-          child: const Text("Hii There!🤩"),
-        ),
-        appBar: AppBar(
-          backgroundColor: Colors.deepPurple,
-          title: const Text("Flutter Is Fun! "),
-          
-        ),
-      ),
+          appBar: AppBar(
+            backgroundColor: Colors.deepPurple,
+            title: const Text("Flutter Is Fun! "),
+          ),
+          body: const Center(
+            child: SizedBox(
+              height: 50,
+              width: 50,
+             child: Text("Hii there !"), 
+            )
+          ,)
+          ),
     );
   }
 }
