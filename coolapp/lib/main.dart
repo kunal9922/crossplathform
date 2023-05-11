@@ -15,13 +15,16 @@ class MpApp extends StatelessWidget {
             backgroundColor: Colors.deepPurple,
             title: const Text("Flutter Is Fun! "),
           ),
-          body: const Center(
-            child: SizedBox(
-              height: 50,
-              width: 50,
-             child: Text("Hii there !"), 
-            )
-          ,)
+          body: const Column(
+            children: [
+              Icon(Icons.abc),
+              Icon(Icons.leaderboard),
+              Icon(Icons.place),
+              Row(children: [
+                Icon(Icons.add_circle),
+                Icon(Icons.air),
+              ],)
+          ],)
           ),
     );
   }
