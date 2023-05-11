@@ -20,8 +20,12 @@ class MpApp extends StatelessWidget {
             Container(
               color: Colors.indigo,
               width: 100, height: 100,
+              child: Icon(Icons.verified),
             ),
-            const Icon(Icons.verified),
+            Align(
+              child: Icon(Icons.abc),
+              alignment: Alignment.center,
+            )
           ],
         ),
       ),
