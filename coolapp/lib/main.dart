@@ -18,12 +18,27 @@ class MpApp extends StatelessWidget {
 
         // floting action button
         floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
           onPressed: () {
             print("Printing pressed ...");
           },
         ),
-        
+        bottomNavigationBar: BottomNavigationBar(
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.business),
+              label: "Business",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.school),
+              label: "School",
+            )
+          ],
+        ),
+        drawer: const Drawer(
+          child: Text("YoYo!"),
+        ),
       ),
     );
   }
