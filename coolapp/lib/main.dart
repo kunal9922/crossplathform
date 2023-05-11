@@ -15,19 +15,15 @@ class MpApp extends StatelessWidget {
           backgroundColor: Colors.deepPurple,
           title: const Text("Flutter Is Fun! "),
         ),
-        body: Stack(
-          children: [
-            Container(
-              color: Colors.indigo,
-              width: 100, height: 100,
-              child: Icon(Icons.verified),
-            ),
-            Align(
-              child: Icon(Icons.abc),
-              alignment: Alignment.center,
-            )
-          ],
+
+        // floting action button
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: () {
+            print("Printing pressed ...");
+          },
         ),
+        
       ),
     );
   }
